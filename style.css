@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -8,17 +10,17 @@ textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: black;
   border-left: 1px solid black;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
+  background-color: lightcoral;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 5px solid black;
 }
 
 .description {
@@ -68,5 +70,49 @@ textarea {
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  background-color: #075b6d;
+}
+
+h1, #currentDay {
+  font-family: 'Orbitron';
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.planner-container {
+  background-color: lightskyblue;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: auto;
+  opacity: 95%;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .planner-container {
+    padding: auto -50px;
+    margin: 0px 0px;
+  }
+
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    /* border-radius: 0;
+    border-bottom: 1px solid black; */
+    /* height: 5%; */
+    margin: 5px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  * {
+    box-sizing: content-box;
+  }
 }
 
